@@ -27,6 +27,19 @@ print out a calendar for April in 2015, but if you omit either the year or both 
 it should use today’s date to get the month and year.
 """
 
+# no input (no argument) -> print calendar for current month
+# one argument -> assume input is a month, render calendar for that month of this year
+# two arguments -> assume month and year, render calendar for that month and year
+# otherwise, print a usage statement to the terminal indicating the correct format
+
 import sys
 import calendar
 from datetime import datetime
+
+def renderCal(m=datetime.today().month, y=datetime.today().year):
+    print(calendar.month(int(y), int(m)))
+
+renderCal(*sys.argv[1:3])
+if len(sys.argv) <= 1:
+    print("Format should be: 14_cal.py [month] [year]")
+    exit()

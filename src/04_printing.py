@@ -18,3 +18,5 @@ print('x is {0}, y is {1}, z is "{2}"'.format(10, 2.24552, "I like turtles!"))
 
 # Finally, print the same thing using an f-string
 print(f'x is {x}, y is {y}, z is "{z}"')
+
+# print('string one', 'string 2', variableOne)

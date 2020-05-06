@@ -56,6 +56,4 @@ def get_values(dict):
     for x in dict:
         print(list(x.values()))
 
-print(get_values(waypoints))
-
-# why do we get None at the end of the result here?
+get_values(waypoints)
