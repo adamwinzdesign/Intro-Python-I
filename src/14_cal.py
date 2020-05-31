@@ -43,3 +43,32 @@ renderCal(*sys.argv[1:3])
 if len(sys.argv) <= 1:
     print("Format should be: 14_cal.py [month] [year]")
     exit()
+
+# from lecture explanation:
+# access the arguments passed to the program
+# print(sys.argv)
+# num_args = len(sys.argv)
+# month = None
+# year = None
+
+# if num_args == 1:
+#   # no arguments
+#   month = datetime.now().month
+#   year = datetime.now().year
+# elif num_args == 2:
+#   # assuming the one argument is the desired month of this year
+#   month = int(sys.argv[1])
+#   year = datetime.now().year
+# elif num_args == 3:
+#   # user specified both month and year
+#   month = int(sys.argv[1])
+#   year = int(sys.argv[2])
+# else:
+#   # error message
+#   print("usage: cal.py [month] [year]")
+#   sys.exit(1)
+
+# cal = calendar.TextCalendar()
+
+# cal.prmonth(year, month)
+  

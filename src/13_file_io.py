@@ -16,6 +16,10 @@ openFoo.close()
 print(openFoo)
 print(readFoo)
 
+# with open('foo.txt') as openFile:
+#   for line in openFile:
+#     print(line)
+
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
 # then close the file. Open up "bar.txt" and inspect it to make
@@ -33,3 +37,8 @@ readBar = openBar.read()
 openBar.close()
 print(openBar)
 print(readBar)
+
+# Sean used fp as file pointer
+fp = open('bar.txt', 'w')
+fp.write("""Line 1\nLine 2\nLine 3""")
+fp.close()

@@ -22,18 +22,24 @@ print(a[x])
 # Output the last three elements in the array: [7, 9, 6]
 x = slice(3, 6)
 print(a[x])
+# print(a[-3:])
+# the colon with nothing afterwards tells the compiler to include everything to the end
 
 # Output the two middle elements in the array: [1, 7]
 x = slice(2,4)
 print(a[x])
+# print(a[2:4])
 
 # Output every element except the first one: [4, 1, 7, 9, 6]
 x = slice(1, 6)
 print(a[x])
+# b = a[:] #this makes a copy of the list
+# b = a[1:] #this makes a copy but excludes the first entry
 
 # Output every element except the last one: [2, 4, 1, 7, 9]
 # x = slice(0, 5)
 print(a[slice(0, 5)])
+# print(a[:-1])
 
 # For string s...
 
